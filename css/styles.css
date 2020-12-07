@@ -14,6 +14,10 @@ body {
   background-color: #e5eff5;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
 main {
   height: 100vh;
   width: 100vw;
@@ -27,9 +31,10 @@ main .single-price {
           transform: translate(-50%, -50%);
   display: -ms-grid;
   display: grid;
-  min-height: 47.5rem;
-  -ms-grid-columns: (23.75rem)[2];
-      grid-template-columns: repeat(2, 23.75rem);
+  height: 47.5rem;
+  width: 63.5rem;
+  -ms-grid-columns: (31.75rem)[2];
+      grid-template-columns: repeat(2, 31.75rem);
   -ms-grid-rows: 21.6rem 25.9rem;
       grid-template-rows: 21.6rem 25.9rem;
 }
@@ -37,6 +42,8 @@ main .single-price {
 main .single-price .grid-elements {
   width: 100%;
   height: 100%;
+  padding: 3rem;
+  color: white;
 }
 
 main .single-price .join {
@@ -49,15 +56,75 @@ main .single-price .join {
   grid-row: 1/2;
 }
 
+main .single-price .join h2 {
+  color: #2ab2af;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+main .single-price .join h3 {
+  color: #c0df34;
+  margin: 2rem 0 1.6rem;
+}
+
+main .single-price .join p {
+  color: #98a6bd;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+}
+
 main .single-price .monthly {
   background-color: #2ab2af;
   grid-column: auto;
   grid-row: auto;
 }
 
+main .single-price .monthly h3 {
+  font-weight: 400;
+}
+
+main .single-price .monthly h4 {
+  margin: .8rem 0;
+  width: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  color: #8fe5e3;
+}
+
+main .single-price .monthly h4 span {
+  font-size: 3.5rem;
+  color: white;
+}
+
+main .single-price .monthly p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #e2f8f8;
+}
+
+main .single-price .monthly button {
+  width: 100%;
+  height: 22%;
+  background-color: #c0df34;
+  border: none;
+}
+
 main .single-price .whyUs {
   background-color: #4abebd;
   grid-column: auto;
   grid-row: auto;
+  color: #e2f8f8;
+}
+
+main .single-price .whyUs h3 {
+  font-weight: 400;
 }
 /*# sourceMappingURL=styles.css.map */
