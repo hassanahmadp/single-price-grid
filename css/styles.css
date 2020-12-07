@@ -121,6 +121,7 @@ main .single-price .monthly button {
   border: none;
   border-radius: 0.5rem;
   margin-top: 3.5rem;
+  cursor: pointer;
 }
 
 main .single-price .monthly button a {
