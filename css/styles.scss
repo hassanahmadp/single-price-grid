@@ -39,6 +39,8 @@ main {
   height: 100vh;
   width: 100vw;
   .single-price {
+    border-radius: 1rem;
+    overflow: hidden;
     box-shadow: 0.5rem 0.5rem 4rem rgba(187, 187, 187, 0.815);
     position: absolute;
     top: 50%;
@@ -156,11 +158,10 @@ main {
   }
   main {
     .single-price {
-      border-radius: 8px;
       height: auto;
       // width: 38rem;
       grid-template-columns: repeat(auto-fit, 40rem);
-      grid-template-rows: 21.6rem*1.5 25.9rem 25.9rem*1.3;
+      grid-template-rows: 21.6rem * 1.5 25.9rem 25.9rem * 1.3;
 
       .join {
         grid-column: auto;
@@ -188,7 +189,7 @@ main {
         ul {
           margin-top: 1.5rem;
           li {
-            margin-bottom: .8rem;
+            margin-bottom: 0.8rem;
             list-style: none;
             font-size: 1.8rem;
             color: lighten(color(cyan), 40%);

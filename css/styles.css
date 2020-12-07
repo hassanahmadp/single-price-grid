@@ -24,6 +24,8 @@ main {
 }
 
 main .single-price {
+  border-radius: 1rem;
+  overflow: hidden;
   -webkit-box-shadow: 0.5rem 0.5rem 4rem rgba(187, 187, 187, 0.815);
           box-shadow: 0.5rem 0.5rem 4rem rgba(187, 187, 187, 0.815);
   position: absolute;
@@ -169,7 +171,6 @@ main .single-price .whyUs ul li {
     font-size: 48%;
   }
   main .single-price {
-    border-radius: 8px;
     height: auto;
     -ms-grid-columns: (40rem)[auto-fit];
         grid-template-columns: repeat(auto-fit, 40rem);
@@ -202,7 +203,7 @@ main .single-price .whyUs ul li {
     margin-top: 1.5rem;
   }
   main .single-price .whyUs ul li {
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
     list-style: none;
     font-size: 1.8rem;
     color: #b9efee;
