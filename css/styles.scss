@@ -39,7 +39,7 @@ main {
   height: 100vh;
   width: 100vw;
   .single-price {
-    box-shadow: 0.5rem 0.5rem 4rem rgb(255, 0, 0);
+    box-shadow: 0.5rem 0.5rem 4rem rgba(187, 187, 187, 0.815);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -101,7 +101,7 @@ main {
         color: lighten(color(cyan), 50%);
       }
       button {
-        box-shadow: $boxShadow;
+        box-shadow: 0.5rem 0.5rem 4rem rgba(112, 112, 112, 0.507);
         width: 100%;
         height: 22%;
         background-color: color(bright-yellow);
@@ -122,6 +122,76 @@ main {
       color: lighten(color(cyan), 50%);
       h3 {
         font-weight: 400;
+      }
+      ul {
+        margin-top: 1.5rem;
+        li {
+          margin-bottom: 0.5rem;
+          list-style: none;
+          font-size: 1.2rem;
+          color: lighten(color(cyan), 40%);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 59%;
+  }
+  main {
+    .single-price {
+      height: auto;
+      width: auto;
+      grid-template-columns: repeat(2, minmax(30rem, 31.75rem));
+      // grid-template-rows: 21.6rem 25.9rem;
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  html {
+    font-size: 48%;
+  }
+  main {
+    .single-price {
+      height: auto;
+      // width: 38rem;
+      grid-template-columns: repeat(auto-fit, 40rem);
+      grid-template-rows: 21.6rem*1.5 25.9rem 25.9rem*1.3;
+
+      .join {
+        grid-column: auto;
+        grid-row: auto;
+        h2 {
+          color: color(cyan);
+          font-size: 3rem;
+          font-weight: 700;
+        }
+        h3 {
+          color: color(bright-yellow);
+          margin: 2rem 0;
+        }
+        p {
+          color: color(grayish-blue);
+          font-size: 1.6rem;
+          line-height: 3rem;
+        }
+      }
+      .whyUs {
+        h3 {
+          font-weight: 400;
+          margin-bottom: 1.3rem;
+        }
+        ul {
+          margin-top: 1.5rem;
+          li {
+            margin-bottom: .8rem;
+            list-style: none;
+            font-size: 1.8rem;
+            color: lighten(color(cyan), 40%);
+          }
+        }
       }
     }
   }

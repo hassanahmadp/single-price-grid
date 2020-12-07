@@ -24,8 +24,8 @@ main {
 }
 
 main .single-price {
-  -webkit-box-shadow: 0.5rem 0.5rem 4rem white;
-          box-shadow: 0.5rem 0.5rem 4rem white;
+  -webkit-box-shadow: 0.5rem 0.5rem 4rem rgba(187, 187, 187, 0.815);
+          box-shadow: 0.5rem 0.5rem 4rem rgba(187, 187, 187, 0.815);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -113,8 +113,8 @@ main .single-price .monthly p {
 }
 
 main .single-price .monthly button {
-  -webkit-box-shadow: #98a6bd;
-          box-shadow: #98a6bd;
+  -webkit-box-shadow: 0.5rem 0.5rem 4rem rgba(112, 112, 112, 0.507);
+          box-shadow: 0.5rem 0.5rem 4rem rgba(112, 112, 112, 0.507);
   width: 100%;
   height: 22%;
   background-color: #c0df34;
@@ -138,5 +138,72 @@ main .single-price .whyUs {
 
 main .single-price .whyUs h3 {
   font-weight: 400;
+}
+
+main .single-price .whyUs ul {
+  margin-top: 1.5rem;
+}
+
+main .single-price .whyUs ul li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+  font-size: 1.2rem;
+  color: #b9efee;
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 59%;
+  }
+  main .single-price {
+    height: auto;
+    width: auto;
+    -ms-grid-columns: (minmax(30rem, 31.75rem))[2];
+        grid-template-columns: repeat(2, minmax(30rem, 31.75rem));
+  }
+}
+
+@media (max-width: 565px) {
+  html {
+    font-size: 48%;
+  }
+  main .single-price {
+    height: auto;
+    -ms-grid-columns: (40rem)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 40rem);
+    -ms-grid-rows: 32.4rem 25.9rem 33.67rem;
+        grid-template-rows: 32.4rem 25.9rem 33.67rem;
+  }
+  main .single-price .join {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  main .single-price .join h2 {
+    color: #2ab2af;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  main .single-price .join h3 {
+    color: #c0df34;
+    margin: 2rem 0;
+  }
+  main .single-price .join p {
+    color: #98a6bd;
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+  main .single-price .whyUs h3 {
+    font-weight: 400;
+    margin-bottom: 1.3rem;
+  }
+  main .single-price .whyUs ul {
+    margin-top: 1.5rem;
+  }
+  main .single-price .whyUs ul li {
+    margin-bottom: .8rem;
+    list-style: none;
+    font-size: 1.8rem;
+    color: #b9efee;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
