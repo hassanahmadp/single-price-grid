@@ -39,6 +39,7 @@ main {
   height: 100vh;
   width: 100vw;
   .single-price {
+    box-shadow: 0.5rem 0.5rem 4rem rgb(255, 0, 0);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -52,7 +53,7 @@ main {
     .grid-elements {
       width: 100%;
       height: 100%;
-      padding: 3rem;
+      padding: 4rem;
       color: white;
     }
 
@@ -84,7 +85,7 @@ main {
         font-weight: 400;
       }
       h4 {
-        margin: .8rem 0;
+        margin: 0.8rem 0;
         width: 16rem;
         @include flex(space-between, center);
         font-size: 1.6rem;
@@ -100,10 +101,18 @@ main {
         color: lighten(color(cyan), 50%);
       }
       button {
+        box-shadow: $boxShadow;
         width: 100%;
         height: 22%;
         background-color: color(bright-yellow);
         border: none;
+        border-radius: 0.5rem;
+        margin-top: 3.5rem;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.6rem;
+        }
       }
     }
     .whyUs {
