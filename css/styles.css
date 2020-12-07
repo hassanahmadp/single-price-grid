@@ -168,6 +168,7 @@ main .single-price .whyUs ul li {
     font-size: 48%;
   }
   main .single-price {
+    border-radius: 8px;
     height: auto;
     -ms-grid-columns: (40rem)[auto-fit];
         grid-template-columns: repeat(auto-fit, 40rem);
